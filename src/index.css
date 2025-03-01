@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+:root {
+    --primary-clr: #000000;
+    --secondary-clr: #ffffff;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 10px  */
+}
+
+body {
+    padding: 2rem;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+.hero_heading {
+    color: var(--primary-clr);
+    font-weight: 700;
+    font-size: 3.4rem;
+    margin-bottom: 1.5rem;
+}
+
+[class^="input"] {
+    display: block;
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    font-size: 3.2rem;
+    font-weight: 400;
+    &:focus {
+        outline: none;
+    }
+}
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+[class$="search"] {
+    border: 3px solid var(--primary-clr);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+input::placeholder {
+    color: var(--primary-clr);
+}
+
+.btn {
+    background-color: var(--primary-clr);
+    color: white;
+    padding: 1rem 6rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.btn-lookup {
+    font-size: 2.4rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btn-lookup:disabled {
+    cursor: not-allowed;
+    background-color: hsl(105, 10%, 70%);
+}
+
+.pincode {
+    font-weight: 700;
+    font-size: 3.4rem;
+    margin-bottom: 1rem;
+}
+
+.result {
+    font-size: 3.4rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.message {
+    font-weight: 700;
+}
+
+.filter {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    border: 3px solid var(--primary-clr);
+    border-radius: 1rem;
+}
+
+.postoffice_container {
+    font-size: 3.4rem;
+    font-weight: 400;
+    border-radius: 1rem;
+    margin-top: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.postoffice_data {
+    border: 3px solid var(--primary-clr);
+    border-radius: 1rem;
+    padding: 1rem;
+    & span {
+        font-weight: 200;
+        font-size: 3rem;
+    }
+}
+
+.error {
+    margin: 1rem 0;
+    font-size: 3.4rem;
+    font-weight: 700;
+    width: 100vw;
+}
+
+/*       */
